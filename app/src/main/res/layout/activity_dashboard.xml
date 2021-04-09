@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Dashboard">
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/iv"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/logologin" />
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:text="Dashboard"
+            android:textStyle="bold"
+            android:textSize="22dp"
+            android:autoSizeTextType="uniform"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout2"
+        app:layout_constraintTop_toBottomOf="@+id/layout1"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/add_room"
+            android:padding="15dp"
+            android:layout_width="150dp"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:clickable="true"
+            android:layout_gravity="center"
+            android:background="@drawable/dsh_style"
+            android:text="Add Room"/>
+        <TextView
+            android:id="@+id/room_list"
+            android:layout_marginTop="20dp"
+            android:padding="15dp"
+            android:layout_width="150dp"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:clickable="true"
+            android:layout_gravity="center"
+            android:background="@drawable/dsh_style"
+            android:text="Room List"/>
+        <TextView
+            android:id="@+id/search_room"
+            android:layout_marginTop="20dp"
+            android:padding="15dp"
+            android:layout_width="150dp"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:clickable="true"
+            android:layout_gravity="center"
+            android:background="@drawable/dsh_style"
+            android:text="Search Room"/>
+        <TextView
+            android:id="@+id/logout"
+            android:layout_marginTop="20dp"
+            android:padding="15dp"
+            android:layout_width="150dp"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:clickable="true"
+            android:layout_gravity="center"
+            android:background="@drawable/dsh_style"
+            android:text="Logout"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
